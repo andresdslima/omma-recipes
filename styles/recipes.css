@@ -1,0 +1,50 @@
+.title__list {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+.container__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 75px;
+    margin-bottom: 500px;
+    width: 100%;
+}
+
+.card__list {
+    height: 450px;
+}
+
+.image__list {
+    width: 345px;
+    height: 345px;
+}
+
+.subtitle__list {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.button__list {
+    background-color: #176902;
+    color: #FFFFFF;
+    width: 185px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.button__list:hover {
+    transition: .5 all;
+    background-color: #FFFFFF;
+    color: #176902;
+    border: 1px solid #176902;
+}
