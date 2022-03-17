@@ -16,8 +16,8 @@ recipes = [
         ],
         instructions: 'Peel the pumpkin and cut into small cubes. Reserve. Place the oil in a deep pan and add the chopped',
         video: 'https://www.youtube.com/embed/KfpK5AFCVmQ',
-        vegan: false,
-    },
+        vegan: false
+    }
 ];
 
 // 4)
@@ -30,7 +30,7 @@ const addRecipe = (title, difficulty, ingredients, instructions, video, vegan) =
         ingredients,
         instructions,
         video,
-        vegan,
+        vegan
     });
 
     console.log('Our Recipes List:\n');
@@ -39,9 +39,9 @@ const addRecipe = (title, difficulty, ingredients, instructions, video, vegan) =
     console.log('---------------------------------------');
 }
 
-addRecipe('Banana Cake', 'Moderate', ['1 spoon of sugar', '2 bananas'], 'Peel the pumpkin and cut into small cubes. Reserve. Place the oil in a deep pan', 'https://www.youtube.com', true,);
+addRecipe('Banana Cake', 'Moderate', ['1 spoon of sugar', '2 bananas'], 'Peel the pumpkin and cut into small cubes. Reserve. Place the oil in a deep pan', 'https://www.youtube.com', true);
 
-addRecipe('Tabule', 'Complex', ['1 cup of water', '1 thing'], 'jajansddkn aksdkjjbjbhbnak fdfdfsndkas', 'https://www.google.com', false,);
+addRecipe('Tabule', 'Complex', ['1 cup of water', '1 thing'], 'jajansddkn aksdkjjbjbhbnak fdfdfsndkas', 'https://www.google.com', false);
 
 // 5)
 const showRecipes = () => {
@@ -53,7 +53,8 @@ const showRecipes = () => {
         console.log(`Vegan: ${item.vegan}\n`);
         console.log('---------------------------------------');
     })
-}
+};
+
 showRecipes();
 
 // 6)
@@ -74,7 +75,7 @@ const deleteRecipe = id => {
 deleteRecipe(999999);
 
 // 7)
-const searchRecipes = (word) => {
+const searchRecipes = word => {
     const newRecipes = recipes.filter(item => item.title.toLowerCase().includes(word.toLowerCase()));
 
     if (!newRecipes.length) {
@@ -87,7 +88,7 @@ const searchRecipes = (word) => {
 }
 
 searchRecipes('RISOTTO');
-searchRecipes('water');
+searchRecipes('shrimp');
 
 // 8)
 const updateRecipes = (id, recipe) => {
